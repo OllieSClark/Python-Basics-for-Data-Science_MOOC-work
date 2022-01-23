@@ -1,3 +1,4 @@
+#generate code for exercise
 from random import randint as rnd
 
 memReg = 'members.txt'
@@ -23,11 +24,10 @@ def genFiles(current,old):
 
 
 genFiles(memReg,exReg)
+#end of generator code
 
-
-
+#my code
 def cleanFiles(currentMem,exMem):
-    ex_list = []
     newcurrent_list = []
     with open(currentMem, "r") as readfile:
         current_list = readfile.readlines()
@@ -46,7 +46,7 @@ def cleanFiles(currentMem,exMem):
         data = "{:^13}  {:<11}  {:<6}\n"
         for line in newcurrent_list:
             writefile.write(line)
-        
+#end of my code       
 
 
 # Code to help you see the files
